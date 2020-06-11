@@ -89,7 +89,7 @@ public class NginxService {
                         strategy = "\tfair;\n";
                         break;
                     default:
-                        strategy = "\tleast_conn;\n";
+                        strategy = "\tpolling;\n";
                 }
                 loadBalancingStrategys.put(appName, strategy);
             }
